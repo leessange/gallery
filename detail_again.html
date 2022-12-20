@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/detail.css">
+    <title>상세내용보기</title>
+</head>
+<body>
+    <div id="item">
+        <h1>&#10024;stained glass works&#128171;</h1>
+        <p>This is my favorite stained glass works<br>
+            Please enjoy the work!</p>
+        <img src="img/stain_1.jpg" alt="">
+        <button id="open" class="over" onclick="showDetail();">▼ Detail</button>
+        <div id="sangse" class="detail" onclick="hideDetail();">
+            <h3><i>알폰스 무하 아르누보 스테인드글라스</i></h3>
+            <p>체코를 상징하는 미술가 알폰스 무하가 제작하였으며, 선적이고 장식적인 문양과 풍요로운 색감으로 19-20세기 아르누보의 정수로
+            평가되며 수많은 작품과 디자인을 선보였으며 이 작품은 프라하성에
+            성비투스 대성당 스테인드 글라스를 비롯하는 작품이다.
+            </p>
+            
+            <button id="close">▲ Close</button>
+        </div>
+    </div>
+    <div id="item">
+        <img src="img/stain_2.jpg" alt="">
+        <button id="open1" class="over" onclick="showDetail1();">▼ Detail</button>
+        <div id="sangse1" class="detail" onclick="hideDetail1();">
+            <h3><i>샤갈 장미창 스테인드글라스</i></h3>
+            <p>스위스 취리히 성모교회에서 볼 수 있는 소박한 느낌의
+            스테인드글라스 작품으로 실내 분위기를 신비롭게 경건하게 만들어주는
+            큰 역할을 하고 있다.
+            </p>
+            <button id="close">▲ Close</button>
+        </div>
+    </div>
+    <div id="item">
+        <img src="img/stain_3.jpg" alt="">
+        <button id="open2" class="over" onclick="showDetail2();">▼ Detail</button>
+        <div id="sangse2" class="detail" onclick="hideDetail2();">
+            <h3><i>파주 시공 스테인드글라스</i></h3>
+            <p>국내 파주 카페에 시공한 스테인드글라스 꽃 유리창으로
+            <br>소박하면서 유럽느낌을 그대로 살린 작품이다. 
+            </p>
+            <button id="close">▲ Close</button>
+        </div>
+    </div>
+<!-- 자바스크립트 삽입 -->
+    <script>
+        function showDetail(){
+            document.querySelector('#sangse').style.display='block';
+            document.querySelector('#open').style.display='none';
+        }
+        function hideDetail(){
+            document.querySelector('#sangse').style.display='none';
+            document.querySelector('#open').style.display='block';
+        }
+        function showDetail1(){
+            document.querySelector('#sangse1').style.display='block';
+            document.querySelector('#open1').style.display='none';
+        }
+        function hideDetail1(){
+            document.querySelector('#sangse1').style.display='none';
+            document.querySelector('#open1').style.display='block';
+        }
+        function showDetail2(){
+            document.querySelector('#sangse2').style.display='block';
+            document.querySelector('#open2').style.display='none';
+        }
+        function hideDetail2(){
+            document.querySelector('#sangse2').style.display='none';
+            document.querySelector('#open2').style.display='block';
+        }
+    </script>
+</body>
+</html>
